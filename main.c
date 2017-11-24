@@ -10,6 +10,8 @@ int main() {
 	local_n = i_global_n = extern_n = 0;
 
 	printf("This program can count C(n,k). Enter 0 0 to exit.\n");
+	printf("Addresses %x %x %x %x %x %x\n", &extern_n, &i_global_n, &global_n, &n, &k, &local_n);
+
 	do {
 		printf("Test %d: Enter n, k: ", ++local_n);
 		scanf("%d %d", &n, &k);
